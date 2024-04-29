@@ -7,3 +7,21 @@ section.hero{
     @apply block md:grid;
     grid-template-columns: .4fr .6fr;
 }
+input[type="email"],
+input[type="password"],
+input[type="text"]
+{
+    @apply block  w-full my-2 rounded-xl ;
+    @apply block border p-2 border-gray-300 bg-gray-100;
+
+}
+button{
+    @apply block w-full font-semibold  text-gray-700 ;
+    @apply block border border-gray-300 px-6 py-2 rounded-xl hover:bg-black hover:text-white;
+
+}
+
+button[type="submit"],.submit{
+    @apply border-0 bg-primary text-white  hover:bg-green-200 hover:text-black;
+   
+}

@@ -1,4 +1,3 @@
-import Header from "./component/layouts/Header";
 import Hero from "./component/layouts/Hero";
 import HomeMenu from "./component/layouts/HomeMenu";
 import SectionHeaders from "./component/layouts/SectionHeaders";
@@ -6,7 +5,6 @@ import SectionHeaders from "./component/layouts/SectionHeaders";
 export default function Home() {
   return (
 <> 
-<Header />
 <Hero/>
 <HomeMenu/>
 
@@ -40,9 +38,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi magna,
   
   </div></section>
 </section>
-<footer className="border-t p-8 text-center text-gray-500">
-&copy; 2024 All Rights reserved
-</footer>
+
 </> 
  );
 }
