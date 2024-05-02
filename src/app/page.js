@@ -1,44 +1,37 @@
-import Hero from "./component/layouts/Hero";
-import HomeMenu from "./component/layouts/HomeMenu";
-import SectionHeaders from "./component/layouts/SectionHeaders";
+import Header from "@/components/layout/Header";
+import Hero from "@/components/layout/Hero";
+import HomeMenu from "@/components/layout/HomeMenu";
+import SectionHeaders from "@/components/layout/SectionHeaders";
 
 export default function Home() {
   return (
-<> 
-<Hero/>
-<HomeMenu/>
-
-<section className="text-center my-16">
-  <SectionHeaders subHeader={'Our Story'}
-                  mainHeader={'About Us'} />
-<div className="max-w-2xl mx-auto mt-4 text-gray-500 flex flex-col gap-4" >
-<p >
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi magna,
- posuere non hendrerit quis, luctus vitae odio. Sed ut est sed risus molestie efficitur. 
- Duis condimentum sit amet lorem sit amet malesuada. Maecenas sed hendrerit ligula. Curabitur leo lorem, varius eget sapien ut, ornare sollicitudin neque. Mauris fermentum libero et consectetur condimentum. Nam commodo sagittis congue. Morbi tortor ipsum, hendrerit 
-eleifend pulvinar ac, fringilla eu est. Donec a finibus lorem.
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi magna,
- posuere non hendrerit quis, luctus vitae odio. Sed ut est sed risus molestie efficitur. 
- Duis condimentum sit amet lorem sit amet malesuada. Maecenas sed hendrerit ligula. Curabitur leo lorem, varius eget sapien ut, ornare sollicitudin neque. Mauris fermentum libero et consectetur condimentum. Nam commodo sagittis congue. Morbi tortor ipsum, hendrerit 
-eleifend pulvinar ac, fringilla eu est. Donec a finibus lorem.
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi magna,
- posuere non hendrerit quis, luctus vitae odio. Sed ut est sed risus molestie efficitur. 
- 
-</p>
-</div>
-<section className="text-center my-16">
-<SectionHeaders subHeader={'Don\'t hesitate us'}
-                  mainHeader={'Contact Us'} />
-<div className="my-4">
-<a className="text-4xl " href="tel:+49777888222">+49 777 888 222 </a>
-  
-  </div></section>
-</section>
-
-</> 
- );
+    <>
+      <Hero />
+      <HomeMenu />
+      <section className="text-center my-16" id="about">
+        <SectionHeaders
+          subHeader={'Our story'}
+          mainHeader={'About us'}
+        />
+        <div className="text-gray-500 max-w-md mx-auto mt-4 flex flex-col gap-4">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni minima odit recusandae. Illum ipsa non repudiandae? Eum ipsam iste quos suscipit tempora? Aperiam esse fugiat inventore laboriosam officiis quam rem!
+          </p>
+          <p>At consectetur delectus ducimus est facere iure molestias obcaecati quaerat vitae voluptate? Aspernatur dolor explicabo iste minus molestiae pariatur provident quibusdam saepe?</p>
+          <p>Laborum molestias neque nulla obcaecati odio quia quod reprehenderit sit vitae voluptates? Eos, tenetur.</p>
+        </div>
+      </section>
+      <section className="text-center my-8" id="contact">
+        <SectionHeaders
+          subHeader={'Don\'t hesitate'}
+          mainHeader={'Contact us'}
+        />
+        <div className="mt-8">
+          <a className="text-4xl underline text-gray-500" href="tel:+46738123123">
+            +46 738 123 123
+          </a>
+        </div>
+      </section>
+    </>
+  )
 }
